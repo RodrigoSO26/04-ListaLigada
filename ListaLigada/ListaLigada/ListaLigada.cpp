@@ -170,7 +170,18 @@ void excluirElemento()
 
 void buscarElemento()
 {
-	
+	int valor;
+	cout << "Digite o elemento que queira buscar: ";
+	cin >> valor;
+	int pos = posicaoElemento(valor);
+
+	if (pos != -1) {
+		cout << "ENCONTRADO" << endl;
+	}
+	else
+	{
+		cout << "ELEMENTO NAO ENCONTRADO" << endl;
+	}
 }
 
 
